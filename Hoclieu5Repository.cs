@@ -369,6 +369,7 @@ namespace Hoclieu5
             RepoItemInfo _lớp4Info;
             RepoItemInfo _luyệntậptiếnganh4tập1Info;
             RepoItemInfo _đăngnhậpInfo;
+            RepoItemInfo _luyệntậptiếnganh4tập11Info;
 
             /// <summary>
             /// Creates a new ContentBound  folder.
@@ -380,6 +381,7 @@ namespace Hoclieu5
                 _lớp4Info = new RepoItemInfo(this, "Lớp4", ".//ul/li[7]/div/div[1]/a[@innertext='Lớp 4']", 30000, null, "3873a450-661b-419b-8b6b-74a60c82620f");
                 _luyệntậptiếnganh4tập1Info = new RepoItemInfo(this, "LuyệnTậpTiếngAnh4Tập1", ".//ul/li[7]/div/div[1]/a[@innertext~'^Luyện\\ tập\\ Tiếng\\ Anh\\ 4\\ Tập']", 30000, null, "ebef6053-4d2d-44a8-aa14-c090c88af8f2");
                 _đăngnhậpInfo = new RepoItemInfo(this, "ĐăngNhập", "div//div[@innertext~'^\\ \\ Để\\ sử\\ dụng\\ bạn\\ cần\\ \\ ho']/a[@innertext='Đăng nhập']", 30000, null, "34b4e1bf-9b9d-46bc-991f-22e6f379c7f4");
+                _luyệntậptiếnganh4tập11Info = new RepoItemInfo(this, "LuyệnTậpTiếngAnh4Tập11", ".//ul/li[5]/div/div[1]/a[@innertext~'^Luyện\\ tập\\ Tiếng\\ Anh\\ 4\\ Tập']", 30000, null, "85b23bb3-4228-4d3d-bd40-0eea46cf86ce");
             }
 
             /// <summary>
@@ -499,6 +501,30 @@ namespace Hoclieu5
                 get
                 {
                     return _đăngnhậpInfo;
+                }
+            }
+
+            /// <summary>
+            /// The LuyệnTậpTiếngAnh4Tập11 item.
+            /// </summary>
+            [RepositoryItem("85b23bb3-4228-4d3d-bd40-0eea46cf86ce")]
+            public virtual Ranorex.ATag LuyệnTậpTiếngAnh4Tập11
+            {
+                get
+                {
+                    return _luyệntậptiếnganh4tập11Info.CreateAdapter<Ranorex.ATag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The LuyệnTậpTiếngAnh4Tập11 item info.
+            /// </summary>
+            [RepositoryItemInfo("85b23bb3-4228-4d3d-bd40-0eea46cf86ce")]
+            public virtual RepoItemInfo LuyệnTậpTiếngAnh4Tập11Info
+            {
+                get
+                {
+                    return _luyệntậptiếnganh4tập11Info;
                 }
             }
         }
